@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace | Karel Třešňák</title>
+    <style>
+        /* Minimalistický dark-mode router pro kořenový adresář */
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --text-primary: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --border: #30363d;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-primary);
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        .gateway-module {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 3rem;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .path {
+            font-family: ui-monospace, monospace;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 2.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .route-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            border-radius: 6px;
+            text-decoration: none;
+            font-family: ui-monospace, monospace;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .route-btn:hover {
+            background: var(--accent);
+            color: var(--bg);
+            box-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <main class="gateway-module">
+        <span class="path">~/SCHOOL-WORK/</span>
+        <h1>Index Repozitáře</h1>
+        
+        <!-- Relativní cesta do podadresáře s aktuálním projektem -->
+        <a href="./IT-PROFIL/" class="route-btn">Vstoupit do modulu: IT-PROFIL >></a>
+    </main>
+</body>
+</html>

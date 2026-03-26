@@ -12,9 +12,14 @@
     ],
     "projects": [ 
         {
+            "title": "Selekce četby - SPŠ a VOŠ Příbram",
+            "description": "Web application made to ease students struggle with picking their books for Maturita",
+            "link": "https://kareltresnak.github.io/MAT-CETBA/?theme=spspb" 
+        },  
+        {
             "title": "WEB - IT Profil",
-            "description": "Zadání předmětu Webové technologie",
+            "description": "Assignment - Web Technologies",
             "link": "https://kareltresnak.github.io/SCHOOL-WORK/IT-PROFIL"
-        }  
+        }
     ]
 }

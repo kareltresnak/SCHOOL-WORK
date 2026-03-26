@@ -50,7 +50,7 @@ function renderInterests(interests) {
     
     // Generování nadpisu až v momentě, kdy máme reálná data
     const h2 = document.createElement('h2');
-    h2.textContent = "Zájmy";
+    h2.textContent = "Interests";
     container.appendChild(h2);
 
     const ul = document.createElement('ul');
@@ -67,7 +67,7 @@ function renderProjects(projects) {
     const container = document.getElementById('projects');
     
     const h2 = document.createElement('h2');
-    h2.textContent = "Projekty";
+    h2.textContent = "Projects";
     container.appendChild(h2);
 
     projects.forEach(project => {
@@ -83,7 +83,7 @@ function renderProjects(projects) {
         
         const link = document.createElement('a');
         link.href = project.link;
-        link.textContent = "Zdrojový kód";
+        link.textContent = "Source code";
         link.target = "_blank"; // Správná praxe u externích odkazů
         
         article.appendChild(title);

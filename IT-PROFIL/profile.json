@@ -1,0 +1,20 @@
+{
+    "name": "Karel Třešňák",
+    "skills": [
+        "Developing with AI (Not vibe coding)",
+        "Python scripting",
+        "Learning Git"
+    ],
+    "interests": [
+        "Low-level languages",
+        "Mathematics",
+        "Learning new worldly spoken languages"
+    ],
+    "projects": [ 
+        {
+            "title": "WEB - IT Profil",
+            "description": "Zadání předmětu Webové technologie",
+            "link": "https://kareltresnak.github.io/SCHOOL-WORK/IT-PROFIL"
+        }  
+    ]
+}

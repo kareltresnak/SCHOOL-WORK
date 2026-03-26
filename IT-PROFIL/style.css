@@ -1,0 +1,145 @@
+/**
+ * @file style.css
+ * @description Vizuální vrstva 5.0. Produkční standard. (GitHub/Vercel estetika).
+ */
+
+:root {
+    /* Precizní paleta pro minimální únavu očí */
+    --bg-color: #0d1117;
+    --surface-color: #161b22;
+    --surface-hover: #21262d;
+    --border-color: #30363d;
+    --border-hover: #8b949e;
+    
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --accent: #58a6ff;
+    
+    /* Robustní font-stack odolný proti chybám OS */
+    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+    min-height: 100vh;
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 760px; /* Užší formát pro optimální délku řádku textu */
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px; /* Návrat k jemné ergonomii */
+    padding: 3rem;
+}
+
+header {
+    margin-bottom: 3rem;
+}
+
+#name {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    letter-spacing: -0.5px;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* Nadpisy sekcí: Decentní, strukturální */
+h2 {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Datové štítky */
+li {
+    background: var(--surface-hover);
+    border: 1px solid transparent;
+    padding: 0.25rem 0.75rem;
+    border-radius: 2em; /* Pill shape - okamžitě rozpoznatelné jako tag */
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+    color: var(--text-secondary);
+    transition: all 0.2s ease;
+}
+
+li:hover {
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+/* Projekty */
+.project-card {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.project-card:hover {
+    border-color: var(--border-hover);
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.2rem;
+}
+
+/* Tlačítka */
+.project-card a {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-primary);
+    background: var(--surface-hover);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-family: var(--font-sans);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.project-card a:hover {
+    background: var(--border-color);
+    border-color: var(--border-hover);
+}
